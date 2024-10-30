@@ -1,0 +1,19 @@
+.GyButtonGroup .flex {
+  display: flex;
+  flex-direction: row;
+}
+.GyButtonGroup .inline-flex {
+  display: inline-flex;
+  flex-direction: column;
+}
+.GyButtonGroup:first-child .GyButton {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.GyButtonGroup:last-child .GyButton {
+  border-right: 0;
+}
+.GyButtonGroup .GyButton {
+  border-radius: 0;
+  border-right: 1px solid rgb(189, 189, 189);
+}

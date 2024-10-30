@@ -1,5 +1,7 @@
+import React from "react";
 import type { Preview } from "@storybook/react";
-import "../src/components/Button/Button.css";
+import GlobalStyle from "../src/styles/globalStyle";
+import { theme } from "../src/styles/theme";
 
 const preview: Preview = {
   parameters: {
@@ -12,5 +14,14 @@ const preview: Preview = {
   },
   tags: ["autodocs"],
 };
+
+export const decorators = [
+  (Story) => (
+    <>
+      <GlobalStyle theme={theme} />
+      <Story />
+    </>
+  ),
+];
 
 export default preview;

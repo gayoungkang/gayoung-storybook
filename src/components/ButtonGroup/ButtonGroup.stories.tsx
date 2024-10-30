@@ -1,9 +1,11 @@
+import ButtonGroup, {
+  ButtonGroupProps,
+} from "@components/ButtonGroup/ButtonGroup";
 import { Meta, StoryFn } from "@storybook/react";
-import Button, { ButtonProps } from "./Button";
 
 export default {
-  title: "Components/Button",
-  component: Button,
+  title: "Components/ButtonGroup",
+  component: ButtonGroup,
   argTypes: {
     variant: {
       control: {
@@ -26,8 +28,8 @@ export default {
   },
 } as Meta;
 
-const Template: StoryFn<ButtonProps> = (args: ButtonProps) => (
-  <Button {...args} />
+const Template: StoryFn<ButtonGroupProps> = (args: ButtonGroupProps) => (
+  <ButtonGroup {...args} />
 );
 
 export const Default = Template.bind({});

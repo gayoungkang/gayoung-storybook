@@ -19,6 +19,7 @@
     "paths": {
       "@stories/*": ["src/stories/*"],
       "@components/*": ["src/components/*"],
+      "@styles/*": ["src/styles/*"],
       "@/*": ["src/*"]
     }
   },
